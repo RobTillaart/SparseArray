@@ -123,7 +123,7 @@ unittest(test_add)
 }
 
 
-unittest(test_boundix_box)
+unittest(test_boundingSegment)
 {
   SparseArray sar(10);
   assertEqual(10, sar.size());

@@ -23,7 +23,7 @@ SparseArray::SparseArray(uint16_t sz)
   {
     _size = SPARSEARRAY_MAX_SIZE;
   }
-  _x     = (uint16_t *) malloc(sz);
+  _x     = (uint16_t *) malloc(sz * sizeof(uint16_t));
   _value = (float *)    malloc(sz * sizeof(float));
   //  catch malloc error
   if (_x && _value) return;
