@@ -58,6 +58,7 @@ unittest(test_constructor)
 unittest(test_set)
 {
   SparseArray sar(10);
+  assertEqual(10, sar.size());
   for (int i = 0; i < 10; i++)
   {
     assertTrue(sar.set(i, 1.0 * i * i));
@@ -78,6 +79,7 @@ unittest(test_set)
 unittest(test_get)
 {
   SparseArray sar(10);
+  assertEqual(10, sar.size());
   for (int i = 0; i < 10; i++)
   {
     assertTrue(sar.set(i, 1.0 * i * i));
@@ -89,6 +91,7 @@ unittest(test_get)
 unittest(test_sum)
 {
   SparseArray sar(10);
+  assertEqual(10, sar.size());
   for (int i = 0; i < 10; i++)
   {
     assertTrue(sar.set(i, 10));
@@ -100,6 +103,7 @@ unittest(test_sum)
 unittest(test_add)
 {
   SparseArray sar(10);
+  assertEqual(10, sar.size());
   for (int i = 0; i < 10; i++)
   {
     assertTrue(sar.add(i, 1.0 * i * i));
@@ -122,6 +126,7 @@ unittest(test_add)
 unittest(test_boundix_box)
 {
   SparseArray sar(10);
+  assertEqual(10, sar.size());
   //  10 element array - 6 random elements in the middle
   for (int i = 0; i < 6; i++)
   {
