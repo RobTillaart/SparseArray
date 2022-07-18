@@ -133,7 +133,7 @@ unittest(test_boundix_box)
   assertEqual(1, sar.count());
 
   uint16_t minX, maxX;
-  sar.boundingSegment(minX, maxX\);
+  sar.boundingSegment(minX, maxX);
   fprintf(stderr, "%d\t%d\n", minX, maxX);
 }
 
