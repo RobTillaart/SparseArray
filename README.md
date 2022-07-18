@@ -105,4 +105,12 @@ This can be useful for printing or processing the non zero elements.
 - merge into one class hierarchy?
 - dump should be in the class?
   - or as static function...
-  - stream as param  dump(Stream str, 
+  - stream as param  dump(Stream str, ...
+  
+#### ideas
+
+- array { uint32_t, float }; for logging  millis/micros + measurement
+  delta coding of time stamp? if it fit in 16 bit?
+  => sounds like a class on its own.
+
+

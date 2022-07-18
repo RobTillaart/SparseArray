@@ -40,7 +40,7 @@ unittest_teardown()
 
 unittest(test_constants)
 {
-  assertEqual(1000, SPARSEMATRIX_MAX_SIZE);
+  assertEqual(1000, SPARSEARRAY_MAX_SIZE);
 }
 
 
@@ -122,7 +122,7 @@ unittest(test_add)
 unittest(test_boundix_box)
 {
   SparseArray sar(10);
-  //  10 x 10 matrix - 6 random elements in the middle
+  //  10 element array - 6 random elements in the middle
   for (int i = 0; i < 6; i++)
   {
     uint8_t x = random(5) + 3;
